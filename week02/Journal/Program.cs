@@ -67,6 +67,11 @@ class Program
                 default:
                     Console.WriteLine("Invalid option. Try again.");
                     break;
+
+                    Console.Write("How was your mood today (1-5)? ");
+                    string mood = Console.ReadLine();
+                    journal.AddEntry(prompt, response, mood);
+
             }
         }
     }
